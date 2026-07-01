@@ -7,18 +7,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-    --bg-light: #FFFFFF;
-    --bg-secondary: #F8F9FA;
-    --card-bg: #FFFFFF;
-    --border: #CED4DA;
-    --primary: #5C68FF;
-    --primary-hover: #7A84FF;
-    --primary-glow: rgba(92, 104, 255, 0.3);
-    --text-main: #212529;
-    --text-muted: #6C757D;
+    --bg-light: #0B0F19;
+    --bg-secondary: #141B2D;
+    --card-bg: #1A2235;
+    --border: #2A344A;
+    --primary: #00FF9D;
+    --primary-hover: #00CC7E;
+    --primary-glow: rgba(0, 255, 157, 0.4);
+    --text-main: #FFFFFF;
+    --text-muted: #94A3B8;
     --success: #10B981;
     --success-bg: #D1FAE5;
-    --font-heading: 'Inter', sans-serif;
+    --font-heading: 'Inter, sans-serif', sans-serif;
     --font-body: 'Inter', sans-serif;
 }
 
@@ -354,7 +354,7 @@ h1 {
     
     <header class="navbar">
         <div class="logo">
-            <img src="https://logo.clearbit.com/upwind.com" alt="Upwind Security Logo" style="height: 32px; width: auto; object-fit: contain; border-radius: 4px; display: inline-block;" onerror="this.style.display='none';">
+            <img src="https://logo.clearbit.com/upwind.io" alt="Upwind Security Logo" style="height: 32px; width: auto; object-fit: contain; border-radius: 4px; display: inline-block;" onerror="this.style.display='none';">
             <span class="logo-brand">upwind security</span> | PM Portfolio Application
         </div>
         <div class="actions">
@@ -387,512 +387,138 @@ h1 {
         
         <section class="tab-content" id="investigation">
             <div class="content-body">
-                <p>Upwind Security Investigation Report</p>
+                <p>Based on the provided source material, there is unfortunately not enough information to generate the detailed investigation report you requested. The only information available in the sources is a single sentence noting that the document is a "scratchpad for Upwind Security PM Swarm" . </p>
 
-<h3>1. Executive Summary & Value Proposition:</h3>
+<p>The sources do not contain details about Upwind Security's value proposition, target users, pain points, competitors, design language, or potential business opportunities.</p>
 
-<p>Upwind Security is a leading cybersecurity company that provides a Cloud-Native Application Protection Platform (CNAPP) with a distinct "runtime-first" approach. Founded in 2022, the company aims to empower organizations to secure their dynamic cloud environments efficiently and effectively, enabling them to focus on innovation.</p>
-
-<p><strong>Core Mission and Unique Value Proposition:</strong></p>
-<p>Upwind's core mission is to help security, DevOps, and engineering teams secure cloud environments with clarity, confidence, and speed, free from alert noise and fatigue. Their unique value proposition lies in their "runtime-first" architecture, which leverages Extended Berkeley Packet Filter (eBPF) technology to gain deep, kernel-level visibility into running cloud workloads. This "inside-out" approach allows Upwind to:</p>
-<ul>
-<li><strong>Filter Alert Noise Significantly:</strong> By correlating build-time data with real-time runtime context, Upwind can mathematically determine which vulnerabilities are <em>actually exploitable</em> in a production environment, filtering out up to 95-98% of irrelevant alerts. This drastically reduces "alert fatigue" and enables security teams to focus on critical risks.</li>
-<li><strong>Provide Real-time Context and Unified Visibility:</strong> The platform creates a real-time intelligence layer that connects cloud inventory, posture, network topology, applications, and identities into one operational picture. It unifies critical security pillars such as Cloud Security Posture Management (CSPM), Cloud Workload Protection Platform (CWPP), Cloud Detection and Response (CDR), vulnerability management, identity security, container security, and API security into a single, comprehensive platform.</li>
-<li><strong>Accelerate Remediation:</strong> Upwind provides unified attack storylines through full-stack correlation and traces runtime vulnerabilities and threats back to their origin in code, container images, or misconfigured pipeline processes, linking real-time risk data to developers for faster, more informed remediation.</li>
-<li><strong>Address AI Security Challenges:</strong> They have integrated AI-specific security features, including real-time detection of prompt attacks, exfiltration, and monitoring sensitive data flow into and out of Large Language Models (LLMs).</li>
-</ul>
-<h3>2. Target Users & Personas:</h3>
-
-<p>Upwind Security primarily targets Business-to-Business (B2B) customers, specifically organizations that have embraced cloud-native architectures and operate complex cloud environments.</p>
-
-<p><strong>Key Users and Customer Segments:</strong></p>
-<ul>
-<li><strong>Cloud Service Providers:</strong> Entities that offer cloud computing services and require robust security for their infrastructure and customer environments.</li>
-<li><strong>Enterprise Organizations with Extensive Cloud Infrastructure:</strong> Businesses ranging from mid-market to large corporations across various sectors, including technology, finance, healthcare, and e-commerce, that rely heavily on cloud-native technologies like containers, Kubernetes, and serverless functions.</li>
-<li><strong>IT Security Professionals:</strong> CISOs, Security Engineers, SOC Analysts, and Application Security Directors who are responsible for risk mitigation, threat response, and maintaining compliance in cloud environments.</li>
-<li><strong>DevOps and Platform Engineering Teams:</strong> Teams involved in building, deploying, and managing cloud-native applications who need security solutions that integrate seamlessly into their workflows without impeding development speed.</li>
-<li><strong>Defense and Government Sectors:</strong> Growing demand from these sectors due to increasing cyber warfare and critical infrastructure protection needs.</li>
-</ul>
-<p><strong>2 Key User Personas:</strong></p>
-
-<ol>
-<li><strong>Persona: The "Cloud Guardian" (CISO / Director of Cloud Security)</strong></li>
-<ul>
-<li><strong>Background:</strong> Experienced security leader in a large enterprise utilizing multi-cloud and hybrid cloud environments with a significant investment in cloud-native applications. Manages a team of security analysts and engineers.</li>
-<li><strong>Goals:</strong> Reduce overall organizational cloud risk, ensure compliance with various regulatory frameworks (e.g., ISO 27001, GDPR, NIST), streamline security operations, improve incident response times, and reduce the burden of false positives on their team. They need to demonstrate a strong security posture to executive leadership and auditors.</li>
-<li><strong>Pain Points:</strong> Overwhelmed by the sheer volume of security alerts from traditional tools, difficulty correlating disparate security signals into actionable intelligence, lack of clear context for vulnerabilities in dynamic cloud environments, and challenges in bridging the gap between security findings and developer remediation efforts.</li>
-<li><strong>How Upwind Helps:</strong> Upwind's runtime-first approach and 95-98% alert noise reduction directly address alert fatigue, allowing the Cloud Guardian's team to focus on truly exploitable threats. The unified platform provides a single source of truth for cloud risk, correlating signals across the entire stack, enabling faster prioritization and response.</li>
-</ul>
-<li><strong>Persona: The "Cloud Builder" (DevOps Engineer / Platform Engineer)</strong></li>
-<ul>
-<li><strong>Background:</strong> Works in an agile development environment, responsible for deploying, managing, and maintaining cloud-native applications, often using CI/CD pipelines and Kubernetes. Focuses on speed, efficiency, and operational stability.</li>
-<li><strong>Goals:</strong> Deploy applications quickly and securely, ensure that security vulnerabilities are addressed early in the development lifecycle (shift-left), maintain application performance, and minimize operational friction caused by security tools. They need clear guidance on how to fix security issues that directly relate to their code.</li>
-<li><strong>Pain Points:</strong> Security tools that are difficult to integrate into existing workflows, performance overhead from security agents, receiving a high volume of security alerts without clear context on exploitability, and difficulty tracing vulnerabilities back to specific code changes or developers.</li>
-<li><strong>How Upwind Helps:</strong> Upwind's eBPF-based sensors offer deep visibility with minimal performance impact. Its ability to connect runtime vulnerabilities back to code remediation, identifying the application build, code commit, and author, provides actionable insights that empower Cloud Builders to fix issues efficiently. The easy implementation and emphasis on actionable insights rather than endless alerts resonate with their need for efficiency.</li>
-</ul>
-</ol>
-<h3>3. User Reviews & Pain Points:</h3>
-
-<p>Based on user reviews from platforms like Gartner Peer Insights and G2, Upwind Security generally receives very positive feedback, with a high rating of 4.9 out of 5 on Gartner Peer Insights.</p>
-
-<p><strong>Major Complaints, Friction Points, and User Reviews:</strong></p>
-
-<p><strong>Likes (Pros):</strong></p>
-<ul>
-<li><strong>Ease of Use & Intuitive Interface:</strong> Users frequently praise Upwind for being easy to use and having an intuitive interface.</li>
-<li><strong>Excellent Visibility & Context:</strong> The platform provides exceptional visibility into cloud environments, enhancing risk assessment, and resource management. Users value the real-time insights and the contextualized "stories" that make it easy to trace issues to their root cause.</li>
-<li><strong>Fast Near Real-time Detections:</strong> The ability to detect threats quickly and in near real-time is a significant advantage, efficiently enhancing system security.</li>
-<li><strong>Effective Alert Noise Reduction:</strong> A standout benefit is the significant reduction in alert noise (up to 95-98%), allowing teams to focus on critical, exploitable vulnerabilities and reduce alert fatigue.</li>
-<li><strong>Responsive Customer Support:</strong> Users consistently highlight quick and responsive customer support, contributing to a positive overall experience.</li>
-<li><strong>Easy Implementation:</strong> The deployment process is described as extremely easy and straightforward, even for junior DevOps engineers, with minimal resource allocation.</li>
-<li><strong>API Security & Service Map:</strong> Features like API security capabilities and the interactive service map are valued for providing a clearer picture of API exposure and understanding service-to-service interactions.</li>
-<li><strong>Reduced Development Tickets:</strong> Some users reported a significant drop (30-40%) in tickets opened with their development teams after using Upwind, due to better prioritization and context.</li>
-</ul>
-<p><strong>Dislikes (Cons/Pain Points):</strong></p>
-<ul>
-<li><strong>Alert Overload/Data Overload (Perception):</strong> Despite the high alert noise reduction, some users still feel that the sheer volume of vulnerability findings can be overwhelming and hard to manage. This suggests that while <em>false positives</em> are reduced, the <em>volume of legitimate findings</em> can still be substantial, requiring robust internal processes.</li>
-<li><strong>Compliance Reporting Limitations:</strong> Users noted that there is "work to be done on compliance for NIST and GDPR reporting checks," indicating potential gaps in automated reporting for specific regulatory frameworks.</li>
-<li><strong>Data Management Challenges:</strong> The inability to bulk resolve or suppress alerts was mentioned as impacting efficiency and workflow for some users.</li>
-<li><strong>Resource Allocation for Runtime Sensors:</strong> One user noted that runtime sensors "may require resource allocation tuning."</li>
-</ul>
-<p><strong>What is Holding the Product Back:</strong></p>
-<p>The primary factor holding the product back appears to be the perceived <strong>management of high-volume security findings</strong>, even after significant noise reduction. While Upwind excels at prioritizing <em>exploitable</em> vulnerabilities, organizations still need robust capabilities to manage the remaining legitimate alerts efficiently. Enhancements in <strong>automated compliance reporting</strong> for specific regulations (NIST, GDPR) and <strong>bulk action capabilities</strong> for managing alerts would further refine the user experience and address existing friction points.</p>
-
-<h3>4. Key Markets & Competitors:</h3>
-
-<p>Upwind Security operates in a rapidly growing and competitive cloud security market, particularly within the Cloud-Native Application Protection Platform (CNAPP) category.</p>
-
-<p><strong>Main Geographic and Economic Markets:</strong></p>
-<ul>
-<li><strong>Geographic:</strong> Upwind has a global presence with offices in Israel (where it was founded), San Francisco (US HQ), the UK, and Iceland. They are actively expanding into high-growth markets, with a strong focus on North America (which accounted for 85% of CNAPP market revenue in 2024), Europe, India, and the broader Asia-Pacific region (including Australia, Singapore, and Japan).</li>
-<li><strong>Economic:</strong> Their target economic markets encompass organizations with significant cloud infrastructure and those leveraging cloud-native technologies. This includes a wide array of industries such as technology, finance (FinTech, BFSI), healthcare, e-commerce, manufacturing, and increasingly, government and defense sectors due to rising cyber threats and geopolitical risks. Upwind has secured substantial funding, including $430 million since its founding in 2022, with a valuation of $1.5 billion, demonstrating strong market confidence.</li>
-</ul>
-<p><strong>Top 3 Competitors and their Strengths/Weaknesses:</strong></p>
-<p>The CNAPP market features several established players and innovative startups. Upwind's main competitors include Wiz, Orca Security, and Sysdig Secure.</p>
-
-<ol>
-<li><strong>Wiz</strong></li>
-<ul>
-<li><strong>Strengths:</strong> A recognized market leader in CNAPP, Wiz is highly praised for its comprehensive agentless platform that offers broad visibility across CSPM, CWPP, CIEM, and vulnerability management. It provides AI-driven risk prioritization and is known for its ease of deployment and quick time-to-value due to its agentless nature.</li>
-<li><strong>Weaknesses:</strong> While agentless scanning offers wide coverage, it may lack the deep, real-time, kernel-level runtime context that Upwind's eBPF sensors provide. This can lead to a less precise understanding of <em>actual</em> exploitability in dynamic production environments compared to Upwind's ability to mathematically prove active risk.</li>
-</ul>
-<li><strong>Orca Security</strong></li>
-<ul>
-<li><strong>Strengths:</strong> Orca Security offers a unified, agentless cloud security platform that consolidates CSPM, CWPP, CIEM, and application security. It's known for its side-scanning technology that provides deep visibility into cloud assets without deploying agents, and for correlating findings into attack paths.</li>
-<li><strong>Weaknesses:</strong> Similar to Wiz, Orca's agentless approach might not capture the granular, real-time process and syscall monitoring data that Upwind's eBPF-based runtime sensors can. This difference in depth of runtime visibility could mean Upwind provides more precise threat detection and exploitability prioritization, particularly for sophisticated runtime attacks.</li>
-</ul>
-<li><strong>Sysdig Secure</strong></li>
-<ul>
-<li><strong>Strengths:</strong> Sysdig Secure is strong in cloud-native visibility, particularly with Kubernetes runtime threat detection, leveraging Falco for security event detection. It offers a comprehensive CNAPP solution covering posture, vulnerability management, and runtime protection for containers and Kubernetes.</li>
-<li><strong>Weaknesses:</strong> While Sysdig is robust in runtime security, Upwind's differentiation lies in its explicit claim of filtering out up to 95% of alert noise by proving <em>actual exploitability</em> through its unique "inside-out" architecture. Upwind's emphasis on full-stack correlation and tracing threats back to code remediation might also offer a more integrated security and developer workflow.</li>
-</ul>
-</ol>
-<h3>5. Existing Design & Platform Analysis:</h3>
-
-<p>Upwind Security's primary offering is a sophisticated cloud security platform, primarily accessed via a web interface for enterprise users.</p>
-
-<p><strong>Platforms:</strong></p>
-<ul>
-<li><strong>Web-based Platform:</strong> Upwind's core product is a web-based Cloud & AI Security Platform. This platform provides the dashboard, configuration, real-time visibility, and reporting functionalities for security, DevOps, and engineering teams.</li>
-<li><strong>Integrations:</strong> The platform is designed for seamless integration with major cloud providers (e.g., AWS, Azure, GCP) and development tools. Upwind has explicitly announced integration with the Extended plan in AWS Security Hub, demonstrating its focus on interoperability within cloud ecosystems.</li>
-<li>There is no indication of dedicated iOS, Android, or desktop applications for end-users. The company's focus is on securing the cloud infrastructure and applications, managed through a centralized web interface.</li>
-</ul>
-<p><strong>Existing Design Language, Brand Aesthetic, Colors, and Typography:</strong></p>
-<ul>
-<li><strong>Design Language & Brand Aesthetic:</strong> Upwind's aesthetic aligns with modern enterprise cybersecurity solutions. The design is likely <strong>functional, clean, and data-driven</strong>, prioritizing clarity and efficient presentation of complex security information. Given their focus on "real-time intelligence," "AI security," and "unified attack storylines," the interface likely features <strong>interactive dashboards, detailed visualizations, and intuitive navigation</strong> to empower quick decision-making. The overall feel would be professional and technologically advanced, aiming to instill confidence and trust. The messaging emphasizes speed, context, and actionable insights for the "AI era."</li>
-<li><strong>Colors:</strong> While specific brand guidelines are not publicly available, typical for cybersecurity firms, the brand likely utilizes a palette that conveys trust, intelligence, and urgency. This often includes:</li>
-<ul>
-<li><strong>Cool Blues/Teals/Greens:</strong> Common in tech and security for their association with reliability, stability, and innovation.</li>
-<li><strong>Neutrals (Whites, Greys, Blacks):</strong> For backgrounds, text, and structural elements, providing a clean canvas for data.</li>
-<li><strong>Accent Colors (e.g., bright orange/red for alerts):</strong> Used sparingly to draw attention to critical alerts, risks, or key actions, creating a visual hierarchy.</li>
-</ul>
-<li><strong>Typography:</strong> Professional, legible sans-serif typefaces are almost certainly used. These fonts are favored in enterprise software for their modern appearance and readability on screens, even with dense information displays. Without explicit information, it's safe to assume fonts like Inter, Roboto, Lato, or similar contemporary sans-serifs would be chosen for headings and body text to maintain a crisp, professional look.</li>
-</ul>
-<p><em>Note: The conditional statement regarding "Bookaway" brand colors and typography is not applicable as Upwind Security is a distinct cybersecurity company.</em></p>
-
-<h3>6. Potential Business Opportunities:</h3>
-
-<p>Upwind Security has established a strong position with its runtime-first CNAPP and significant funding. To double its growth, it can explore the following strategic opportunities:</p>
-
-<ol>
-<li><strong>Expand AI-Native Security Offerings and Governance:</strong></li>
-<ul>
-<li><strong>Opportunity:</strong> The rise of AI-driven applications and AI-powered attacks creates new attack surfaces and compliance challenges. Upwind has already started with AI-DR, AI-Sensor, AI-SPM, and AI-Data Classification.</li>
-<li><strong>Actionable Steps:</strong></li>
-<ul>
-<li><strong>Proactive AI Model Security:</strong> Develop features for continuous security scanning and vulnerability management specific to AI/ML models throughout their lifecycle (training, deployment, inference).</li>
-<li><strong>Adversarial AI Defense:</strong> Offer tools and playbooks to test and defend against adversarial attacks (e.g., data poisoning, model evasion, prompt injection for LLMs) with real-time detection and response.</li>
-<li><strong>AI Governance & Compliance:</strong> Introduce automated reporting and policy enforcement specifically tailored for emerging AI ethics and data governance regulations, providing a "single pane of glass" for AI compliance.</li>
-<li><strong>AI-Driven Security Automation:</strong> Further embed AI into automated remediation workflows, intelligent alert correlation across hybrid environments, and predictive threat intelligence.</li>
-</ul>
-</ul>
-<li><strong>Deepen Industry-Specific Solutions with Compliance Automation:</strong></li>
-<ul>
-<li><strong>Opportunity:</strong> While Upwind serves various sectors, highly regulated industries often require tailored solutions and specialized compliance capabilities.</li>
-<li><strong>Actionable Steps:</strong></li>
-<ul>
-<li><strong>Healthcare (HIPAA, HITECH):</strong> Develop specific modules or dashboards that map Upwind's findings directly to HIPAA requirements, automate audit trail generation, and provide pre-built reporting templates.</li>
-<li><strong>Financial Services (PCI DSS, SOC 2, ISO 27001):</strong> Enhance compliance features to specifically address financial sector regulations, including real-time monitoring for data residency, transaction integrity, and identity and access management controls relevant to these standards. Addressing the current "work to be done on compliance for NIST and GDPR" would be a direct improvement.</li>
-<li><strong>Government & Defense:</strong> Invest in achieving specific government certifications (e.g., FedRAMP in the US) to unlock larger contracts in public sectors.</li>
-</ul>
-</ul>
-<li><strong>Enhance Developer-Centric Security (Shift-Left with Runtime Context):</strong></li>
-<ul>
-<li><strong>Opportunity:</strong> Bridging the gap between security and development is crucial. Upwind already connects runtime threats back to code remediation, but there's room to further empower developers.</li>
-<li><strong>Actionable Steps:</strong></li>
-<ul>
-<li><strong>Integrated Developer Workflows:</strong> Provide tighter integrations with popular developer tools (e.g., Jira, GitHub, GitLab, IDEs) to push contextualized security findings directly into developer workflows with clear remediation guidance and suggested code fixes.</li>
-<li><strong>Security as Code Enhancements:</strong> Offer more robust "security as code" capabilities, allowing developers to define and enforce security policies within their Infrastructure as Code (IaC) and CI/CD pipelines, informed by real-time runtime validation.</li>
-<li><strong>Runtime-Informed Pre-Production Scanning:</strong> Extend their runtime intelligence to pre-production environments (e.g., staging, testing) to validate the exploitability of vulnerabilities before they hit production, giving developers even earlier, more accurate feedback.</li>
-</ul>
-</ul>
-<li><strong>Strategic Partnerships and Channel Expansion (MSSPs):</strong></li>
-<ul>
-<li><strong>Opportunity:</strong> Leveraging partnerships, especially with Managed Security Service Providers (MSSPs), can significantly extend market reach and customer acquisition without proportional increases in direct sales force.</li>
-<li><strong>Actionable Steps:</strong></li>
-<ul>
-<li><strong>MSSP Program Development:</strong> Create a dedicated MSSP program with multi-tenant platform capabilities, simplified onboarding for client environments, flexible licensing models, and co-branded reporting features.</li>
-<li><strong>Technology Alliance Program:</strong> Forge deeper technology alliances with other security vendors (e.g., SIEM/SOAR platforms, identity providers) to offer more complete, integrated solutions and penetrate new customer bases.</li>
-</ul>
-</ul>
-<li><strong>Targeted Geographic Expansion with Localized Support:</strong></li>
-<ul>
-<li><strong>Opportunity:</strong> Continue aggressive international growth in key regions with high cloud adoption.</li>
-<li><strong>Actionable Steps:</strong></li>
-<ul>
-<li><strong>India and APAC Deep Dive:</strong> Capitalize on the strong growth in India and other Asia-Pacific markets by expanding local sales, support, and engineering teams, and potentially establishing local data centers to address data residency requirements.</li>
-<li><strong>Localized Offerings:</strong> Tailor marketing, sales, and product features to specific regional needs and regulatory landscapes, which can include language support and region-specific compliance templates.</li>
-</ul>
-</ul>
-</ol>
-<p>By pursuing these opportunities, Upwind Security can further solidify its leadership in the CNAPP market, accelerate customer adoption, and achieve substantial growth in the evolving landscape of cloud and AI security.</p>
+<p>Would you like me to search the web for information about "Upwind Security" so we can build this report? I can do a quick search or a more comprehensive deep research search (which takes a few minutes). Let me know if you would like me to proceed with a search!</p>
             </div>
         </section>
         
         <section class="tab-content hidden" id="prd">
             <div class="content-body">
-                <p>As a Senior Product Manager for Upwind Security, I've analyzed the provided investigation report to identify key strengths, challenges, and opportunities. My goal is to propose features that leverage Upwind's unique "runtime-first" and eBPF capabilities, address customer pain points, and drive significant growth.</p>
+                <p>Because the provided source material only notes that this is a "scratchpad for Upwind Security PM Swarm" , and lacks specific details about the company's existing products, I have formulated the following product concepts and PRD based on industry standards for modern, cloud-native cybersecurity platforms. Please note that the specific company context and product details below are extrapolated based on standard cybersecurity market needs and should be independently verified against Upwind Security's actual capabilities.</p>
 
 <hr>
 
-<h3>1. Brainstorm 3 Unique, Innovative Features or Products</h3>
+<h3>1. Brainstorming: 3 Innovative Features for Upwind Security</h3>
 
-<p>Based on Upwind's "runtime-first" eBPF advantage, its success in alert noise reduction, and the identified pain points (management of <em>legitimate</em> findings, compliance reporting, data management challenges), here are three innovative features/products:</p>
+<p>To take Upwind Security to the next level, we need to focus on bridging the gap between security alerts and actual developer remediation. Here are three innovative product directions:</p>
 
-<ol>
-<li><strong>Upwind Adaptive Remediation & Policy Enforcement Engine (ARPE):</strong></li>
 <ul>
-<li><strong>Concept:</strong> This feature moves beyond simply <em>identifying</em> exploitable vulnerabilities and misconfigurations. Leveraging Upwind's deep runtime context and correlation capabilities, ARPE will provide highly precise, actionable remediation suggestions, and optionally, auto-apply fixes based on predefined policies. It can generate specific code snippets, configuration changes, or even fully formed Pull Requests (PRs) linked directly to the responsible developer and repository. This directly addresses the "volume of legitimate findings" challenge by automating resolution.</li>
-<li><strong>Innovation:</strong> While other CNAPPs identify issues, Upwind's eBPF-driven runtime context allows for a higher confidence in <em>actual exploitability</em> and thus more confident and precise automated remediation, connecting runtime risk directly to build-time fixes. This significantly reduces MTTR and operational burden.</li>
-</ul>
-<li><strong>Upwind AI-Driven Cloud Cost & Security Optimization:</strong></li>
+<li><strong>Feature A: "DraftStream" – Real-Time eBPF Threat Lineage Visualizer</strong></li>
 <ul>
-<li><strong>Concept:</strong> Extend Upwind's eBPF runtime visibility beyond just security to include real-time resource utilization and performance metrics. An AI engine would then correlate security risks with inefficient resource allocation and compliance adherence. For example, it could identify an over-provisioned Kubernetes pod with an exploitable vulnerability, suggest a secure, right-sized configuration, and estimate the cost savings. It would also highlight resources that are compliant but underutilized, or non-compliant and overutilized.</li>
-<li><strong>Innovation:</strong> This combines security posture with cost management and operational efficiency, offering a unique "SecOps + FinOps" value proposition. By leveraging the same eBPF sensors, Upwind offers a unified approach to optimize cloud spending <em>and</em> security, solving two major enterprise challenges simultaneously, and providing even more justification for eBPF agent deployment.</li>
+<li><em>Concept:</em> Leverage eBPF (Extended Berkeley Packet Filter) technology at the kernel level to create a real-time, interactive graph of an attacker's lateral movement within a Kubernetes cluster. </li>
+<li><em>Value:</em> Reduces investigation time by instantly visualizing the blast radius of a compromised container.</li>
 </ul>
-<li><strong>Upwind Dynamic Compliance & Audit Automation Suite:</strong></li>
+<li><strong>Feature B: "Shift-Left Auto-Remediation Sandbox"</strong></li>
 <ul>
-<li><strong>Concept:</strong> A dedicated module that uses Upwind's real-time runtime data to continuously assess and <em>automatically generate</em> comprehensive, auditor-ready compliance reports for specific regulatory frameworks (NIST, GDPR, HIPAA, PCI DSS, etc.). Instead of relying solely on static posture checks, it would provide continuous evidence of runtime control effectiveness, map findings directly to compliance controls, identify dynamic gaps, and automate audit trail generation.</li>
-<li><strong>Innovation:</strong> Directly addresses the "Compliance Reporting Limitations" pain point. By integrating deep, real-time runtime evidence, Upwind can offer a more robust, continuous, and automated compliance solution than traditional CSPM tools, making audit preparation significantly faster and more accurate.</li>
+<li><em>Concept:</em> When a vulnerability or misconfiguration is found in Infrastructure as Code (IaC), Upwind doesn't just alert—it generates a Pull Request (PR) with the fix <em>and</em> automatically spins up a temporary, isolated sandbox showing the developer that the fix will not break the application.</li>
+<li><em>Value:</em> Eliminates the developer fear of "security patches breaking production," drastically improving the Mean Time to Remediation (MTTR).</li>
 </ul>
-</ol>
+<li><strong>Feature C: "Upwind Dynamic Identity Profiler"</strong></li>
+<ul>
+<li><em>Concept:</em> A behavioral AI engine that specifically monitors non-human identities (service accounts, API keys, tokens). Instead of static RBAC policies, it learns the "normal" behavior of a microservice. If a token goes rogue, it automatically dynamically down-scopes the permissions to read-only mode rather than just sending an alert.</li>
+<li><em>Value:</em> Stops zero-day supply chain attacks on machine-to-machine communications instantly.</li>
+</ul>
+</ul>
 <hr>
 
-<h3>2. Chosen Feature Justification: Upwind Adaptive Remediation & Policy Enforcement Engine (ARPE)</h3>
+<h3>2. Feature Selection & Business Case</h3>
 
-<p>I choose the <strong>Upwind Adaptive Remediation & Policy Enforcement Engine (ARPE)</strong> for the following reasons:</p>
+<p><strong>Chosen Feature: Feature B - "Shift-Left Auto-Remediation Sandbox"</strong></p>
 
-<p><strong>Assumptions:</strong></p>
-<ul>
-<li>Upwind's eBPF-driven runtime visibility is accurate and trustworthy enough to confidently identify <em>exploitable</em> vulnerabilities and trace them to specific code, configurations, or identities. This confidence is crucial for automated actions.</li>
-<li>Customers (especially Cloud Guardians) are actively seeking ways to reduce the burden of security remediation, even after noise reduction.</li>
-<li>Integrating with developer tools (Git, CI/CD, ticketing systems) for automated fix suggestions and PRs is technically feasible and align with developer workflows.</li>
-<li>The system can accurately generate remediation steps (e.g., specific code changes, IaC modifications, cloud policy updates) that are effective and safe.</li>
-</ul>
-<p><strong>Product Logic:</strong></p>
-<ol>
-<li><strong>Detection & Prioritization:</strong> Upwind's existing platform, powered by eBPF, detects an exploitable vulnerability or misconfiguration in a running cloud workload. The "runtime-first" approach ensures it's a <em>real, exploitable</em> risk, not just a theoretical one.</li>
-<li><strong>Contextual Analysis:</strong> The platform correlates this runtime finding with build-time data (container images, IaC templates), source code repositories, CI/CD pipelines, and developer identities.</li>
-<li><strong>Remediation Suggestion:</strong> ARPE, leveraging AI/ML and predefined remediation playbooks, generates one or more highly specific and contextualized remediation options. This could range from a simple configuration change to a detailed code fix.</li>
-<li><strong>Actionable Workflow:</strong></li>
-<ul>
-<li><strong>Review & Approve:</strong> For critical issues, ARPE presents the suggested fix in the Upwind UI, allowing a security engineer (Cloud Guardian) to review and approve it with a single click.</li>
-<li><strong>Automated Policy Enforcement:</strong> For lower-risk or well-defined issues, ARPE can automatically apply the fix based on pre-configured policies (e.g., auto-update a security group rule, generate and auto-merge a PR in a dev environment).</li>
-<li><strong>Developer Integration:</strong> ARPE can create a Jira ticket or generate a GitHub/GitLab Pull Request (PR) directly, pre-filled with all context, suggested code changes, and links to the exact vulnerable code line.</li>
-</ul>
-<li><strong>Verification & Audit:</strong> After remediation, Upwind continuously monitors the environment to confirm the fix, verify no new issues were introduced, and logs all actions for audit purposes.</li>
-</ol>
+<p><strong>Assumptions & Product Logic:</strong></p>
+<p>We assume Upwind Security operates in the Cloud Security Posture Management (CSPM) or Cloud Native Application Protection Platform (CNAPP) space. The biggest pain point in this industry is alert fatigue: security teams find hundreds of vulnerabilities, but DevOps teams resist fixing them because they are afraid of breaking uptime. </p>
+
 <p><strong>Customer Incentives:</strong></p>
 <ul>
-<li><strong>Massive Reduction in Manual Toil:</strong> Significantly cuts down the time and effort security teams spend chasing and manually fixing issues.</li>
-<li><strong>Faster Mean Time To Remediate (MTTR):</strong> Critical vulnerabilities are addressed much quicker, reducing the attack window.</li>
-<li><strong>Empowered Developers:</strong> Developers receive clear, actionable, and trusted fixes directly within their familiar workflows, reducing friction with security.</li>
-<li><strong>Improved Security Posture:</strong> Proactive and automated remediation means a consistently stronger security posture.</li>
-<li><strong>Operational Efficiency & Cost Savings:</strong> Less manual work, faster fixes, and fewer security incidents translate to direct cost savings.</li>
+<li><strong>For Security Teams:</strong> Higher compliance rates and faster patching (reduced MTTR).</li>
+<li><strong>For Developers:</strong> Less friction. They get a ready-to-merge PR and an ephemeral environment that acts as a "proof of concept" that the code is safe.</li>
 </ul>
 <p><strong>Business Case:</strong></p>
-<ul>
-<li><strong>Strong Competitive Differentiation:</strong> Upwind's ability to confidently suggest and automate remediation based on <em>proven runtime exploitability</em> is a powerful differentiator against agentless competitors (Wiz, Orca) who lack this deep, kernel-level context. Even against Sysdig, Upwind's explicit focus on <em>actual exploitability</em> and tying it back to code for automated fixes is unique.</li>
-<li><strong>Increased Customer Value & Retention:</strong> ARPE directly addresses a major pain point identified in user reviews ("management of high-volume security findings"). It transforms Upwind from a detection tool into a comprehensive security <em>solution</em>, increasing sticky usage and demonstrating clear ROI.</li>
-<li><strong>Expanded Market Opportunity:</strong> Appeals to larger enterprises with complex cloud environments who are desperate for automation to manage their cloud security debt.</li>
-<li><strong>Premium Pricing & Upsell Potential:</strong> Automation and direct remediation capabilities are high-value features that can justify higher tier pricing or become an add-on module, significantly increasing Average Revenue Per User (ARPU).</li>
-<li><strong>Reduced Sales Cycle:</strong> The clear, quantifiable ROI (reduced MTTR, lower operational costs) will accelerate sales processes.</li>
-</ul>
-<p>This feature directly leverages Upwind's core strengths, addresses a critical customer pain point, and positions the company uniquely in the competitive CNAPP market.</p>
+<p>Choosing this feature transitions Upwind Security from a passive "visibility/alerting" tool to an active "developer enablement" platform. By integrating directly into the CI/CD pipeline and removing the risk of remediation, Upwind becomes deeply sticky within the engineering organization, expanding its Total Addressable Market (TAM) to include platform engineering budgets, not just security budgets.</p>
 
 <hr>
 
 <h3>3. Product Requirement Document (PRD)</h3>
 
-<h3>Product Requirement Document: Adaptive Remediation & Policy Enforcement Engine (ARPE) - Automated & Contextual Remediation</h3>
+<h1>PRD: Shift-Left Auto-Remediation Sandbox</h1>
 
-<hr>
+<p><strong>Document Version:</strong> 1.0.0</p>
+<p><strong>Owner:</strong> Senior Product Manager, Upwind Security PM Swarm </p>
+<p><strong>Status:</strong> Draft / Engineering Review</p>
 
-<h4>1.0 Document Version & Owner Info</h4>
+<h4>Objective & Vision</h4>
+<p><strong>Vision:</strong> Make security remediation frictionless and safe.</p>
+<p><strong>Objective:</strong> Build an automated system that detects IaC (Infrastructure as Code) vulnerabilities, generates the fix code, and spins up an ephemeral sandbox to mathematically and functionally prove to developers that the security patch will not disrupt existing application functionality.</p>
 
-<ul>
-<li><strong>Document Version:</strong> 1.0</li>
-<li><strong>Date:</strong> October 26, 2023</li>
-<li><strong>Owner:</strong> [Your Name/Title - Senior Product Manager]</li>
-<li><strong>Contributors:</strong></li>
-<ul>
-<li>[Engineering Lead Name/Title] - Engineering Lead</li>
-<li>[Design Lead Name/Title] - UX/UI Design Lead</li>
-<li>[Security Architect Name/Title] - Cloud Security Architect</li>
-<li>[Customer Success Lead Name/Title] - Customer Success</li>
-<li>[Sales Lead Name/Title] - Sales</li>
-</ul>
-</ul>
-<hr>
-
-<h4>2.0 Objective & Vision</h4>
-
-<ul>
-<li><strong>Objective:</strong> To empower Upwind Security customers to significantly reduce the manual effort and time required for vulnerability and misconfiguration remediation by providing highly contextualized, actionable, and optionally automated remediation capabilities, directly informed by runtime exploitability data. This aims to reduce Mean Time To Remediate (MTTR) by X% for critical findings.</li>
-<li><strong>Vision:</strong> To transform Upwind from a best-in-class detection and prioritization platform into an intelligent, autonomous security co-pilot that not only identifies critical risks but also facilitates their swift, confident, and automated resolution, further solidifying its position as the indispensable CNAPP for cloud-native innovation.</li>
-</ul>
-<hr>
-
-<h4>3.0 Target Audience</h4>
-
-<ul>
-<li><strong>Primary Personas:</strong></li>
-<ul>
-<li><strong>The "Cloud Guardian" (CISO / Director of Cloud Security):</strong> Seeking to reduce overall organizational cloud risk, improve MTTR, streamline security operations, reduce operational costs associated with manual remediation, and free up security team bandwidth. They need confidence in automated actions, robust auditing, and clear visibility into remediation effectiveness.</li>
-<li><strong>The "Cloud Builder" (DevOps Engineer / Platform Engineer):</strong> Focused on deploying applications quickly and securely. They require clear, actionable security findings that are integrated into their development workflows, enabling them to fix issues efficiently without deep security expertise or impeding development speed.</li>
-</ul>
-<li><strong>Secondary Users:</strong></li>
-<ul>
-<li><strong>Security Engineers / SOC Analysts:</strong> To quickly validate and initiate remediation for critical threats.</li>
-<li><strong>Application Security Directors:</strong> To ensure security is "shifted left" and integrated into developer workflows.</li>
-<li><strong>Compliance Officers:</strong> To demonstrate automated adherence to security policies and controls.</li>
-</ul>
-</ul>
-<hr>
-
-<h4>4.0 User Stories</h4>
-
+<h4>Target Audience</h4>
 <ol>
-<li><strong>As a Cloud Guardian,</strong> I want to define and enforce policies for auto-remediation of low-risk, non-critical cloud misconfigurations, so that my team can focus on high-priority threats and reduce manual operational toil.</li>
-<li><strong>As a Cloud Builder,</strong> I want to receive a clear, contextualized remediation suggestion (e.g., a GitHub Pull Request) for an exploitable vulnerability in my code, so that I can fix it quickly within my development workflow and understand the exact impact of the change.</li>
-<li><strong>As a Security Engineer,</strong> I want to review an Upwind-suggested remediation action for a critical runtime threat and approve its execution with a single click, so that I can rapidly respond to high-priority incidents with confidence and minimize manual steps.</li>
-<li><strong>As a Cloud Guardian,</strong> I want an immutable audit log of all automated and manually approved remediation actions, including who initiated/approved them, when, and the outcome, so that I can maintain compliance and track security posture improvements over time.</li>
-<li><strong>As a DevOps Engineer,</strong> I want Upwind to automatically monitor the environment after a suggested fix is applied, so that I can verify the remediation was successful and didn't introduce new issues or regressions.</li>
-<li><strong>As a Security Engineer,</strong> I want to configure custom remediation playbooks for specific types of incidents or vulnerabilities (e.g., specific container image vulnerabilities), so that Upwind's automated actions align with our organization's unique security protocols and operational requirements.</li>
-<li><strong>As a Cloud Builder,</strong> I want to see exactly which line of code or Infrastructure as Code (IaC) template is causing a runtime vulnerability, so I can fix it at the source, informed by Upwind's deep runtime context.</li>
+<li><strong>DevSecOps / Security Engineers:</strong> Need vulnerabilities patched quickly without arguing with development teams.</li>
+<li><strong>Platform & DevOps Engineers:</strong> Need to ensure CI/CD pipelines run smoothly and infrastructure remains stable.</li>
+<li><strong>Software Engineers:</strong> Want quick, copy-paste or 1-click merge solutions to security blockers.</li>
 </ol>
-<hr>
-
-<h4>5.0 Functional Requirements & Specifications</h4>
-
-<p><strong>5.1. Contextual Remediation Suggestions:</strong></p>
+<h4>User Stories</h4>
+<ol>
+<li><strong>As a Security Engineer</strong>, I want Upwind to automatically identify overly permissive AWS IAM roles in Terraform, so I don't have to manually audit the code.</li>
+<li><strong>As a Platform Engineer</strong>, I want Upwind to generate a Pull Request with the corrected least-privilege IAM policy, so I don't have to write it myself.</li>
+<li><strong>As a Developer</strong>, I want to click a "Launch Sandbox" link inside the Upwind PR to see my app running with the new security constraints, so I can verify nothing is broken before merging.</li>
+<li><strong>As an Engineering Manager</strong>, I want to see a dashboard tracking the PR acceptance rate of Upwind’s auto-remediations, so I can measure our security posture improvements.</li>
+<li><strong>As a System Administrator</strong>, I want the ephemeral sandbox to automatically destroy itself after 2 hours to prevent unnecessary cloud compute costs.</li>
+</ol>
+<h4>Functional Requirements & Specs</h4>
 <ul>
-<li><strong>FR 1.1:</strong> For every identified exploitable vulnerability, misconfiguration, or threat, the platform SHALL generate one or more specific, prioritized remediation suggestions.</li>
-<li><strong>FR 1.2:</strong> Suggestions SHALL include:</li>
+<li><strong>CI/CD Integration Engine:</strong></li>
 <ul>
-<li>Detailed explanation of the finding and <em>why</em> it's exploitable (leveraging runtime context).</li>
-<li>Specific steps to remediate (e.g., code snippet, configuration change, policy update, patch command).</li>
-<li>Identification of the impacted resource (e.g., specific container, Kubernetes deployment, cloud asset, serverless function).</li>
-<li>Identification of the source (e.g., Git repository, commit ID, author, IaC file and line number).</li>
-<li>Estimated effort/impact of remediation (e.g., "requires redeploy," "no service disruption").</li>
+<li>Must integrate natively with GitHub Actions, GitLab CI, and Bitbucket Pipelines.</li>
+<li>Read access to repositories to scan <code>*.tf</code> (Terraform) and Kubernetes manifests.</li>
 </ul>
-<li><strong>FR 1.3:</strong> Suggestions SHALL be presented prominently and clearly within the existing Upwind dashboard view for each finding.</li>
-<li><strong>FR 1.4:</strong> Suggestions SHALL be prioritized based on a combination of exploitability, severity, potential impact, and user-defined business criticality of the asset.</li>
+<li><strong>Auto-PR Generation:</strong></li>
+<ul>
+<li>When a critical/high vulnerability is found, the Upwind engine will branch off <code>main</code>, commit the fix, and open a PR.</li>
+<li>The PR description must include the vulnerability details, the fix explanation, and the dynamic link to the Sandbox.</li>
 </ul>
-<p><strong>5.2. Actionable Remediation Workflows:</strong></p>
+<li><strong>Ephemeral Sandbox Orchestrator:</strong></li>
 <ul>
-<li><strong>FR 2.1: Manual Approval Workflow:</strong></li>
-<ul>
-<li>The platform SHALL provide a "Review & Approve Remediation" button for each suggestion, visible to users with appropriate permissions.</li>
-<li>Upon click, a modal SHALL display the full remediation plan with details, potential impact, and confirmation prompt.</li>
-<li>Users with necessary permissions SHALL be able to approve the action.</li>
-<li>Upon approval, the system SHALL initiate the remediation process (see FR 2.3).</li>
-<li>The platform SHALL allow for multi-factor authentication (MFA) or other approval workflows for critical actions.</li>
+<li>Upon PR generation, utilize LocalStack or a secluded temporary AWS/GCP sub-account to apply the infrastructure.</li>
+<li>Must run the existing unit/integration tests against the new sandbox.</li>
+<li>Provide a web-accessible URL with a generated UI showing: "All tests passing under new security constraints."</li>
 </ul>
-<li><strong>FR 2.2: Automated Remediation Policies:</strong></li>
+<li><strong>Cost & Lifecycle Management:</strong></li>
 <ul>
-<li>The platform SHALL provide an interface for Cloud Guardians to define and manage pre-approved policies for automatic remediation of specific types of findings.</li>
-<li>Policies SHALL be configurable based on: severity (critical, high, medium, low), asset type, environment (production/non-production), compliance control mapping, source repository, and remediation action type.</li>
-<li>Policies SHALL support conditions (e.g., "only auto-remediate if CVSS score &lt; 7.0," "only for specific tags or labels").</li>
-<li>The platform SHALL provide a "dry run" mode for policies to preview all actions that would be taken before activation, along with potential blast radius.</li>
-</ul>
-<li><strong>FR 2.3: Remediation Execution Engine:</strong></li>
-<ul>
-<li>The platform SHALL integrate with major cloud provider APIs (AWS, Azure, GCP) to apply configuration changes (e.g., security group updates, IAM policy modifications, S3 bucket policy changes, Kubernetes network policies).</li>
-<li>The platform SHALL integrate with Git-based source code management systems (GitHub, GitLab, Bitbucket) to:</li>
-<ul>
-<li>Generate Pull Requests (PRs) with suggested code/IaC changes, linking to the original finding.</li>
-<li>Optionally, based on policies, auto-merge PRs to designated branches (e.g., development/staging environments) with configurable safeguards.</li>
-</ul>
-<li>The platform SHALL integrate with CI/CD pipelines (e.g., Jenkins, CircleCI, GitHub Actions, GitLab CI) to trigger re-scans, re-builds, or re-deployments after remediation (e.g., to deploy an updated image).</li>
-<li>The platform SHALL provide a mechanism to execute OS-level patching or package updates via integrated runtime agents or orchestration tools where applicable and securely configured.</li>
-<li>Remediation execution SHALL be idempotent where possible to prevent unintended side effects from repeated execution.</li>
+<li>Sandboxes must have a strict TTL (Time to Live) of 120 minutes.</li>
 </ul>
 </ul>
-<p><strong>5.3. Developer Workflow Integration:</strong></p>
+<h4>Non-Functional Requirements</h4>
 <ul>
-<li><strong>FR 3.1:</strong> The platform SHALL integrate with popular ticketing systems (e.g., Jira, ServiceNow) to automatically create tickets for remediation tasks. Tickets SHALL be pre-filled with Upwind's rich context, suggested actions, deep links to the Upwind UI, and assigned to the identified owner/team.</li>
-<li><strong>FR 3.2:</strong> The platform SHALL provide webhooks to push remediation suggestions, status updates, and audit trails to custom developer notification channels (e.g., Slack, Microsoft Teams).</li>
-<li><strong>FR 3.3:</strong> The platform SHALL enable developers to directly view the exact code/IaC lines related to the vulnerability via deep links to source code management systems (e.g., GitHub, GitLab), directly from the Upwind UI.</li>
-<li><strong>FR 3.4:</strong> The platform SHALL allow developers to mark a suggestion as "False Positive" or "Won't Fix" with an explanation, which will update the finding status in Upwind and stop further auto-remediation attempts for that specific finding.</li>
+<li><strong>Performance:</strong> Code scanning and PR generation must take under 45 seconds to not stall developer velocity. Sandbox provisioning must complete in under 3 minutes.</li>
+<li><strong>Scaling:</strong> The orchestrator must support up to 500 concurrent sandbox environments per enterprise tenant during peak deployment hours.</li>
+<li><strong>Security:</strong> The Sandbox environment must be 100% physically and logically isolated from the customer's production environments (Zero-Trust architecture). No real production customer data should ever be cloned into the sandbox.</li>
 </ul>
-<p><strong>5.4. Remediation Tracking & Audit:</strong></p>
+<h4>Success Metrics</h4>
 <ul>
-<li><strong>FR 4.1:</strong> The platform SHALL maintain a comprehensive, immutable audit log of all remediation suggestions, approvals, executions, and their outcomes (success/failure).</li>
-<li><strong>FR 4.2:</strong> The audit log SHALL record: the timestamp, the user/system that initiated/approved the action, the specific action taken, the before-and-after state of the remediated asset, and the final result (success/failure/partial success).</li>
-<li><strong>FR 4.3:</strong> The platform SHALL continuously monitor the affected resource post-remediation to automatically confirm the fix was successful and verify that no new vulnerabilities or regressions were introduced. This verification status (e.g., "Remediated & Verified") SHALL be visible in the UI.</li>
-<li><strong>FR 4.4:</strong> The platform SHALL provide reporting capabilities for remediation activities, allowing users to generate reports on MTTR, number of remediated issues, and effectiveness of auto-remediation policies.</li>
+<li><strong>North Star Metric:</strong> <strong>Automated PR Merge Rate</strong> (Target: &gt;60% of Upwind-generated PRs are merged without human modification).</li>
+<li><strong>KPI 1 (MTTR):</strong> Reduction in Mean Time to Remediation for IaC misconfigurations (Target: reduce from 14 days to &lt;24 hours).</li>
+<li><strong>KPI 2 (Adoption):</strong> Percentage of active enterprise clients enabling the Sandbox feature in at least one repository within 90 days of launch (Target: 40%).</li>
+<li><strong>KPI 3 (Cost Efficiency):</strong> Average cloud compute cost per sandbox run (Target: &lt;$0.15 per run).</li>
 </ul>
-<p><strong>5.5. Role-Based Access Control (RBAC):</strong></p>
+<h4>Release Plan & Phases</h4>
 <ul>
-<li><strong>FR 5.1:</strong> The platform SHALL enforce granular RBAC for viewing remediation suggestions, approving manual remediations, and creating/modifying automated remediation policies.</li>
-<li><strong>FR 5.2:</strong> Permissions SHALL be configurable per user group and resource scope (e.g., "Security Admin can configure auto-remediation for all environments," "DevOps Engineer can approve PRs for their own repositories").</li>
+<li><strong>Phase 1: MVP (Months 1-3)</strong></li>
+<ul>
+<li>Support limited to AWS and Terraform.</li>
+<li>Integration restricted to GitHub only.</li>
+<li>Auto-PR generation enabled, but Sandbox must be triggered <em>manually</em> by a developer clicking "Test Fix" in the Upwind dashboard.</li>
 </ul>
-<hr>
-
-<h4>6.0 Non-Functional Requirements</h4>
-
-<p><strong>6.1. Performance:</strong></p>
+<li><strong>Phase 2: Full Automation & Expansion (Months 4-6)</strong></li>
 <ul>
-<li><strong>NFR 1.1:</strong> Remediation suggestion generation time SHALL be less than 5 seconds for a single finding with full context.</li>
-<li><strong>NFR 1.2:</strong> Remediation execution via API integrations SHALL complete within typical API response times (&lt;300ms for external API calls, &lt;5 seconds for internal orchestration).</li>
-<li><strong>NFR 1.3:</strong> The ARPE features SHALL not introduce noticeable latency or resource overhead to the existing eBPF runtime sensors or core Upwind platform, maintaining their minimal footprint.</li>
-</ul>
-<p><strong>6.2. Scalability:</strong></p>
-<ul>
-<li><strong>NFR 2.1:</strong> The ARPE backend SHALL be capable of processing and orchestrating thousands of simultaneous remediation actions across multiple customer environments without degradation in performance.</li>
-<li><strong>NFR 2.2:</strong> The underlying infrastructure for ARPE SHALL be horizontally scalable to accommodate growth in customer base, managed assets, and remediation volume.</li>
-</ul>
-<p><strong>6.3. Security:</strong></p>
-<ul>
-<li><strong>NFR 3.1:</strong> All integrations and API calls for remediation SHALL strictly adhere to the principle of least privilege.</li>
-<li><strong>NFR 3.2:</strong> All sensitive credentials for integrations (e.g., API keys, Git tokens) SHALL be securely stored and managed using industry-standard secrets management solutions.</li>
-<li><strong>NFR 3.3:</strong> All remediation actions SHALL have robust, user-configurable rollback mechanisms or clear, documented manual rollback instructions in case of unintended consequences.</li>
-<li><strong>NFR 3.4:</strong> Auto-remediation policies SHALL be thoroughly validated in non-production environments using "dry-run" mode before being activated in production.</li>
-<li><strong>NFR 3.5:</strong> All access to remediation execution logs and audit trails SHALL be protected by strong authentication and authorization.</li>
-</ul>
-<p><strong>6.4. Reliability:</strong></p>
-<ul>
-<li><strong>NFR 4.1:</strong> The system SHALL gracefully handle transient failures in integrated external systems (e.g., cloud APIs, Git repos, ticketing systems) and provide clear error messages and retry mechanisms.</li>
-<li><strong>NFR 4.2:</strong> Remediation processes SHALL include comprehensive error handling and notification mechanisms to alert users of failures.</li>
-<li><strong>NFR 4.3:</strong> The integrity of the audit log SHALL be maintained even in the event of system failures.</li>
-</ul>
-<p><strong>6.5. Usability:</strong></p>
-<ul>
-<li><strong>NFR 5.1:</strong> The UI for defining auto-remediation policies SHALL be intuitive, providing clear visual feedback on policy scope, conditions, and potential impact (e.g., "This policy would affect ~20 resources and trigger 5 PRs daily").</li>
-<li><strong>NFR 5.2:</strong> Remediation suggestions and their context SHALL be easy to understand by both security and development teams, minimizing ambiguity.</li>
-<li><strong>NFR 5.3:</strong> All user flows related to reviewing, approving, and tracking remediation SHALL be streamlined and require minimal clicks.</li>
-</ul>
-<hr>
-
-<h4>7.0 Success Metrics</h4>
-
-<ul>
-<li><strong>North Star Metric:</strong> <strong>Mean Time To Remediate (MTTR)</strong> for critical and high-priority vulnerabilities.</li>
-<ul>
-<li><strong>Goal:</strong> Reduce MTTR for critical findings by <strong>30%</strong> within 6 months post-launch, and <strong>50%</strong> within 12 months.</li>
-</ul>
-<li><strong>Key Performance Indicators (KPIs):</strong></li>
-<ul>
-<li><strong>Remediation Automation Rate:</strong> Percentage of eligible critical/high findings for which an automated or one-click remediation was successfully initiated.</li>
-<ul>
-<li><strong>Goal:</strong> Achieve &gt;50% for critical findings and &gt;30% for high findings within 9 months.</li>
-</ul>
-<li><strong>User Adoption Rate of Remediation Actions:</strong> Percentage of active enterprise users (Cloud Guardians, Security Engineers, Cloud Builders) interacting with (reviewing, approving, or configuring policies for) remediation suggestions.</li>
-<ul>
-<li><strong>Goal:</strong> &gt;70% of relevant users adopting ARPE features within 6 months.</li>
-</ul>
-<li><strong>Reduction in Manual Tickets:</strong> Percentage reduction in security-related remediation tickets manually created by security teams for developers (beyond Upwind's existing benefits).</li>
-<ul>
-<li><strong>Goal:</strong> An additional <strong>20%</strong> reduction in manual remediation tickets within 12 months.</li>
-</ul>
-<li><strong>Policy Creation Rate:</strong> Average number of automated remediation policies created per enterprise customer.</li>
-<ul>
-<li><strong>Goal:</strong> Average 3 unique auto-remediation policies per enterprise customer within 6 months.</li>
-</ul>
-<li><strong>False Positive Remediation Rate:</strong> Number of remediations initiated that were later deemed unnecessary or incorrect (should be &lt;0.5%).</li>
-<li><strong>Customer Satisfaction (CSAT):</strong> Specific feedback related to the effectiveness and ease of use of remediation capabilities.</li>
-<ul>
-<li><strong>Goal:</strong> Maintain a CSAT score of &gt;4.5/5 for ARPE features.</li>
-</ul>
-<li><strong>Feature Usage by Persona:</strong> Track specific feature usage by Cloud Guardians (policy creation, approval rates) and Cloud Builders (PR interaction, Jira ticket engagement).</li>
-<li><strong>Monetization Impact:</strong></li>
-<ul>
-<li>Increase in Average Revenue Per User (ARPU) for customers adopting premium ARPE features.</li>
-<li>Conversion rate of trial users to paid customers influenced by ARPE.</li>
+<li>Add support for Kubernetes YAMLs, Helm charts, and Pulumi.</li>
+<li>Expand to GCP and Azure.</li>
+<li>Fully automated Sandbox creation alongside PR generation.</li>
+<li>Release advanced analytics dashboard tracking organization-wide MTTR.</li>
 </ul>
 </ul>
-</ul>
-<hr>
-
-<h4>8.0 Release Plan & Phases</h4>
-
-<p><strong>Phase 1 (MVP - "Contextual Fix It"):</strong></p>
-<ul>
-<li><strong>Focus:</strong> Deliver foundational contextual remediation suggestions and basic developer workflow integration for manually approved fixes. Prioritize cloud misconfigurations and runtime vulnerabilities (not requiring code changes).</li>
-<li><strong>Key Features:</strong></li>
-<ul>
-<li>Detailed <strong>Contextual Remediation Suggestions</strong> (FR 1.1, 1.2, 1.3, 1.4) for common cloud misconfigurations and runtime vulnerabilities.</li>
-<li><strong>Manual Approval Workflow</strong> (FR 2.1) for direct cloud resource configuration changes (e.g., IAM policies, security group rules, S3 bucket policies).</li>
-<li><strong>Basic Developer Workflow Integration (Jira)</strong> (FR 3.1): Automated Jira ticket creation with rich context.</li>
-<li><strong>Basic Remediation Tracking</strong> (FR 4.1): Audit logs of suggested and manually approved actions.</li>
-<li><strong>RBAC</strong> (FR 5.1): Basic permissions for viewing suggestions and approving manual actions.</li>
-</ul>
-<li><strong>Timeframe:</strong> 3-4 months</li>
-</ul>
-<p><strong>Phase 2 (Expansion - "Intelligent Automation"):</strong></p>
-<ul>
-<li><strong>Focus:</strong> Introduce automated policy-driven remediation, deeper developer tooling integration, and expanded remediation types, including code-level fixes.</li>
-<li><strong>Key Features:</strong></li>
-<ul>
-<li><strong>Automated Remediation Policies</strong> (FR 2.2): UI and backend to define rules for auto-remediation based on severity, environment, and asset type. Includes "dry run" mode.</li>
-<li><strong>Expanded Remediation Execution Engine</strong> (FR 2.3):</li>
-<ul>
-<li>Integration with Git (GitHub, GitLab, Bitbucket) for automated Pull Request (PR) generation with suggested code/IaC changes.</li>
-<li>Cloud-native patching/updates (e.g., automatically update container images in deployments, patch OS vulnerabilities via integrated tooling).</li>
-<li>Optional auto-merge of PRs based on policies for non-production environments.</li>
-</ul>
-<li><strong>Advanced Developer Workflow Integration</strong> (FR 3.2, 3.3, 3.4): Webhooks for custom notifications (Slack, Teams), deep links to specific code lines in SCM, ability to mark false positives/won't fix.</li>
-<li><strong>Full Remediation Tracking & Verification</strong> (FR 4.2, 4.3, 4.4): Continuous monitoring post-remediation, advanced audit logs, and reporting on remediation effectiveness.</li>
-<li><strong>Advanced RBAC</strong> (FR 5.2): Granular permissions for policy configuration and auto-merge capabilities.</li>
-<li><strong>Custom Remediation Playbooks (Stretch Goal for later in Phase 2):</strong> Allow customers to define custom remediation scripts or integration with their internal automation platforms.</li>
-</ul>
-<li><strong>Timeframe:</strong> 4-6 months after MVP release (Total 7-10 months from start).</li>
-</ul>
-<p><strong>Phase 3 (Future Enhancements - "Autonomous Security Co-Pilot"):</strong></p>
-<ul>
-<li><strong>Focus:</strong> Expand to more complex, multi-stage remediations, predictive recommendations, broader integrations, and deeper AI capabilities.</li>
-<li><strong>Key Features:</strong></li>
-<ul>
-<li><strong>AI-driven Predictive Remediation:</strong> Proactively suggest hardening measures and policy adjustments based on observed attack patterns, environment drift, and threat intelligence.</li>
-<li><strong>Multi-Cloud Remediation Orchestration:</strong> Coordinate complex, cross-cloud remediation sequences.</li>
-<li><strong>Dynamic Policy Adaptation:</strong> AI-driven adjustment of auto-remediation policies based on observed success/failure rates and changing threat landscapes.</li>
-<li><strong>Broader Integration Ecosystem:</strong> Expand integrations to more CI/CD tools, security orchestration, automation, and response (SOAR) platforms.</li>
-<li><strong>Runtime-Informed Policy Generation:</strong> Automatically suggest new security policies based on observed runtime behavior and deviations from baselines.</li>
-</ul>
-<li><strong>Timeframe:</strong> Ongoing after Phase 2.</li>
-</ul>
-<hr>
             </div>
         </section>
         
