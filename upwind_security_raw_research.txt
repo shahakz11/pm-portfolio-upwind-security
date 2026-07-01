@@ -1,0 +1,36 @@
+# Upwind Security Raw Research Data
+
+## 1. Company Overview & Tech Stack
+* **Name:** Upwind Security
+* **Founders:** Founded in 2022 by ex-Spot.io leaders (Amiram Shachar and others). Valued at $1.5B in 2026.
+* **Core Product:** Runtime-first Cloud-Native Application Protection Platform (CNAPP).
+* **Technology:** Uses eBPF-based lightweight runtime sensors/agents to inspect Kubernetes, containers, virtual machines, and cloud environments at the kernel level.
+* **Main Capabilities:** Cloud Security Posture Management (CSPM), Cloud Workload Protection (CWPP), Cloud Infrastructure Entitlement Management (CIEM), API Security, and AI-stack security.
+
+## 2. Target Users & Personas
+* **Persona 1: Security Engineer Sophia (Enterprise Security Architect)**
+  - Responsibilities: Manages multi-cloud environments, configures security policies, and conducts threat investigations.
+  - Pain Points: Overwhelmed by alert fatigue (thousands of static vulnerability scan results with no proof of exploitability).
+* **Persona 2: DevOps Lead Dan (Remediation Owner)**
+  - Responsibilities: Deploys cloud infrastructure, keeps platforms running, and fixes security issues.
+  - Pain Points: Afraid that applying security patches will break production systems or introduce latency.
+
+## 3. Value Proposition
+* **Runtime-First Context:** Upwind observes applications *in runtime* to see if a vulnerability is actually executed, reached, or exposed to the internet. If not, it deprioritizes the alert. This reduces alert noise by over 90%.
+* **Rapid Root Cause Analysis:** Maps infrastructure topology in real-time, matching runtime events to source code repositories for quick remediation.
+* **Developer Enablement:** Shifts security left by providing high-fidelity remediation code patches rather than just pointing out problems.
+
+## 4. Brand Aesthetics & Design System
+* **Colors:** Upwind's brand identity uses a professional, high-contrast, modern developer style.
+  - Primary Brand Color: Modern Indigo / Slate Blue (`#5C68FF`)
+  - Primary Hover: `#7A84FF`
+  - Accent Color: Neon Green / Mint (`#00FF9D`) for successes, checks, and clean states.
+  - Background Style: Mostly light mode with clean slate/white backgrounds (`#FFFFFF`, `#F8F9FA`) and dark gray text (`#212529`).
+  - Typography: Modern sans-serif, using "Inter" or similar clean grotesque fonts.
+* **Design Philosophy:** Transparent and actionable. Focuses on low noise, simple dashboards, and interactive topology graphs. Uses natural language explainability (Choppy AI) that translates logic into readable text.
+
+## 5. Competitors
+* **Wiz:** Market leader in CNAPP, primarily agentless/snapshot-based. Wiz is very broad but lacks the deep real-time kernel-level eBPF monitoring that Upwind emphasizes.
+* **Orca Security:** Strong agentless posture manager, but historically less focused on runtime threat protection.
+* **Sysdig:** Deep eBPF workload protection, but historically less comprehensive on overall CSPM compared to Upwind.
+* **Lacework / Snyk:** Standard AppSec and cloud security players.
